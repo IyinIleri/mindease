@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1284 2778" width="1284" height="2778">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A0A3C"/>
+      <stop offset="100%" style="stop-color:#2D1060"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" style="stop-color:#7C3AED;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="orb" cx="50%" cy="42%" r="52%">
+      <stop offset="0%" style="stop-color:#C084FC"/>
+      <stop offset="45%" style="stop-color:#9333EA"/>
+      <stop offset="100%" style="stop-color:#6D28D9"/>
+    </radialGradient>
+    <radialGradient id="shine" cx="38%" cy="35%" r="45%">
+      <stop offset="0%" style="stop-color:#EDE9FE;stop-opacity:0.45"/>
+      <stop offset="100%" style="stop-color:#EDE9FE;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="ring" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#A78BFA;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#A78BFA;stop-opacity:0"/>
+    </radialGradient>
+    <clipPath id="clip"><circle cx="642" cy="1280" r="220"/></clipPath>
+    <filter id="gf"><feGaussianBlur stdDeviation="18" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="textGlow"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1284" height="2778" fill="url(#bg)"/>
+
+  <!-- Background ambient glow -->
+  <ellipse cx="642" cy="1300" rx="600" ry="600" fill="url(#glow)"/>
+
+  <!-- Subtle star dots -->
+  <g opacity="0.12" fill="#A78BFA">
+    <circle cx="150" cy="200" r="3"/><circle cx="1100" cy="180" r="2"/>
+    <circle cx="80" cy="600" r="2"/><circle cx="1200" cy="500" r="3"/>
+    <circle cx="200" cy="2400" r="2"/><circle cx="1050" cy="2500" r="3"/>
+    <circle cx="400" cy="2600" r="2"/><circle cx="900" cy="2650" r="2"/>
+    <circle cx="642" cy="350" r="2"/><circle cx="300" cy="1000" r="2"/>
+    <circle cx="984" cy="900" r="2"/><circle cx="642" cy="2200" r="2"/>
+  </g>
+
+  <!-- Outer pulse ring -->
+  <circle cx="642" cy="1280" r="300" fill="url(#ring)"/>
+
+  <!-- Main orb -->
+  <circle cx="642" cy="1280" r="220" fill="url(#orb)" filter="url(#gf)"/>
+  <circle cx="642" cy="1280" r="220" fill="url(#shine)"/>
+
+  <!-- Brain symbol -->
+  <g clip-path="url(#clip)" opacity="0.92">
+    <path d="M642 1190 C618 1190 596 1200 585 1217 C574 1234 573 1252 577 1265 C569 1271 563 1282 564 1294 C565 1306 575 1315 588 1318 C585 1327 587 1338 597 1344 C607 1350 621 1349 630 1343 C633 1350 638 1355 642 1358 L642 1190 Z" fill="none" stroke="white" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M642 1190 C666 1190 688 1200 699 1217 C710 1234 711 1252 707 1265 C715 1271 721 1282 720 1294 C719 1306 709 1315 696 1318 C699 1327 697 1338 687 1344 C677 1350 663 1349 654 1343 C651 1350 646 1355 642 1358 L642 1190 Z" fill="none" stroke="white" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="642" y1="1190" x2="642" y2="1358" stroke="white" stroke-width="4" opacity="0.3" stroke-dasharray="10,10"/>
+    <path d="M597 1225 C591 1238 590 1254 595 1265" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M573 1269 C573 1283 578 1296 585 1306" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M687 1225 C693 1238 694 1254 689 1265" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M711 1269 C711 1283 706 1296 699 1306" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M604 1346 L618 1346 L624 1330 L634 1370 L640 1348 L642 1355 L680 1355" fill="none" stroke="#EDE9FE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Wordmark with glow -->
+  <text x="642" y="1560" font-family="Georgia, serif" font-size="88" font-weight="700" letter-spacing="6" text-anchor="middle" fill="#A78BFA" opacity="0.4" filter="url(#textGlow)">MindEase</text>
+  <text x="642" y="1560" font-family="Georgia, serif" font-size="88" font-weight="700" letter-spacing="6" text-anchor="middle" fill="white">MindEase</text>
+
+  <!-- Tagline -->
+  <text x="642" y="1620" font-family="Georgia, serif" font-size="28" letter-spacing="8" text-anchor="middle" fill="#C084FC" opacity="0.8">YOUR WELLNESS COMPANION</text>
+
+  <!-- Separator -->
+  <line x1="492" y1="1510" x2="792" y2="1510" stroke="#A78BFA" stroke-width="1.5" opacity="0.3"/>
+</svg>
