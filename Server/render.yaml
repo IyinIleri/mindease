@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: mindease-server
+    env: node
+    region: oregon
+    plan: free
+    rootDir: Server
+    buildCommand: npm install
+    startCommand: node Server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: MONGODB_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASS
+        sync: false
+      - key: SENDER_EMAIL
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: SPOTIFY_CLIENT_ID
+        sync: false
+      - key: SPOTIFY_CLIENT_SECRET
+        sync: false
+      - key: CLIENT_URL
+        sync: false
