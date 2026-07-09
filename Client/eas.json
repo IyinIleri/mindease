@@ -1,6 +1,7 @@
 {
   "cli": {
-    "version": ">= 20.0.0"
+    "version": ">= 20.0.0",
+    "appVersionSource": "local"
   },
   "build": {
     "development": {
@@ -8,14 +9,19 @@
       "distribution": "internal"
     },
     "preview": {
+      "distribution": "internal",
       "android": {
-        "buildType": "apk"
+        "buildType": "apk",
+        "image": "ubuntu-22.04-jdk-17-ndk-r26b"
       },
-      "distribution": "internal"
+      "env": {
+        "EAS_SKIP_AUTO_FINGERPRINT": "1"
+      }
     },
     "production": {
       "android": {
-        "buildType": "app-bundle"
+        "buildType": "app-bundle",
+        "image": "ubuntu-22.04-jdk-17-ndk-r26b"
       }
     }
   },
