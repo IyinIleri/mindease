@@ -12,6 +12,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.iyinileri.mindease",
       "adaptiveIcon": {
         "backgroundColor": "#1A0A3C",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
