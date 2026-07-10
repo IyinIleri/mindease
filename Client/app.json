@@ -60,7 +60,9 @@
             "backgroundColor": "#1A0A3C"
           }
         }
-      ]
+      ],
+      "expo-font",
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true
@@ -73,9 +75,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "f5d96b06-911a-4e5c-8b54-0b7b1962716f"
+        "projectId": "791822c1-f252-4b4a-ad0b-15ea378c512c"
       }
     },
-    "owner": "iyin1"
+    "owner": "iyinajibaba"
   }
 }
