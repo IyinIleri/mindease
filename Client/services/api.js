@@ -1,8 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export const BASE_URL = 'http://10.241.114.42:5000';
-// export const BASE_URL = 'http://192.168.x.x:5000'; // Physical device
-// export const BASE_URL = 'https://your-app.up.railway.app'; // Production
+export const BASE_URL = 'https://mindease-rc9p.onrender.com'; // Production (Render)
+// export const BASE_URL = 'http://10.241.114.42:5000'; // Local dev only
 
 async function request(endpoint, options = {}) {
   try {
